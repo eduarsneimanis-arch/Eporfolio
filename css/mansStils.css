@@ -1,0 +1,74 @@
+body {
+    background-image: url('../images/fons.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #111;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.w3-navbar {
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #444;
+}
+
+.w3-navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+.w3-navbar a:hover {
+    background: #333;
+    color: #00d4ff;
+}
+
+section, article, nav.sidebar {
+    background: rgba(0, 0, 0, 0.85);
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h2, h3 { color: #00d4ff; text-align: center; }
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    padding: 10px 15px;
+    background: #00d4ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background: #0099bb; }

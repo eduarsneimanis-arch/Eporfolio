@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Dzēriena cena - Mans Portfolio</title>
+    <link rel="stylesheet" href="css/mansStils.css">
+    <script>
+        function raditCenu() {
+            document.getElementById('cenasVieta').innerText = " Cena: 1.50 EUR";
+        }
+    </script>
+</head>
+<body>
+    <div class="w3-navbar">
+        <a href="index.html">Sākums</a>
+    </div>
+
+    <section>
+        <h2>Dzēriena pasūtīšana</h2>
+        <p>Spied pogu, lai uzzinātu cenu:</p>
+        
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <button type="button" onclick="raditCenu()">Rādīt cenu</button>
+            <span id="cenasVieta" style="font-weight:bold; font-size: 1.2em; color: #00d4ff;"></span>
+        </div>
+
+        <br><br>
+        <a href="index.html" style="color:white;">Atpakaļ uz sākumu</a>
+    </section>
+</body>
+</html>

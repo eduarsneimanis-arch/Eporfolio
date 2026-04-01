@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Rīgas Valsts 1. ģimnāzija</title>
+    <link rel="stylesheet" href="css/mansStils.css">
+    <style>
+        .row { display: flex; flex-wrap: wrap; }
+        .side { flex: 30%; background: rgba(255,255,255,0.05); padding: 20px; }
+        .main { flex: 70%; padding: 20px; }
+        @media (max-width: 600px) { .row { flex-direction: column; } }
+    </style>
+</head>
+<body>
+<div class="w3-navbar"><a href="index.html">Atpakaļ</a></div>
+<section>
+    <h1>Rīgas Valsts 1. ģimnāzija</h1>
+    <div class="row">
+        <div class="side">
+            <h3>Satura rādītājs</h3>
+            <ol>
+                <li><a href="#v1" style="color:white;">Vēsture</a></li>
+                <li><a href="#v2" style="color:white;">Nosaukumi</a></li>
+                <li><a href="#v3" style="color:white;">Vadītāji</a></li>
+            </ol>
+        </div>
+        <div class="main">
+            <h2 id="v1">Vēsture</h2>
+            <p>Dibināta 1211. gadā. Senākā skola Baltijā.</p>
+            <img src="images/skola.jpg" alt="Skola">
+            <h2 id="v2">Nosaukumi</h2>
+            <ul><li>1211. Domkapitula skola</li><li>1996. RV1G</li></ul>
+            <h2 id="v3">Vadītāji</h2>
+            <table>
+                <tr><th>Gads</th><th>Vārds</th></tr>
+                <tr><td>1239.</td><td>Heinrihs</td></tr>
+            </table>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Baiti</title>
+    <link rel="stylesheet" href="css/mansStils.css">
+    <script>
+        function rekinat(v) {
+            let s = document.getElementById('sek').value;
+            let biti = s * 25 * 1000000;
+            let res = (v == 'KB') ? biti/8/1000 : biti/8/1024;
+            document.getElementById('atb').value = res.toFixed(2) + " " + v;
+        }
+    </script>
+</head>
+<body>
+<div class="w3-navbar"><a href="index.html">Atpakaļ</a></div>
+<section>
+    <h2>Datu kalkulators (25 Mbps)</h2>
+    Sekundes: <input type="number" id="sek" onfocus="this.value=''">
+    <br><br>
+    <input type="radio" name="u" onclick="rekinat('KiB')"> KiB
+    <input type="radio" name="u" onclick="rekinat('KB')"> KB
+    <br><br>
+    Rezultāts: <input type="text" id="atb" readonly>
+</section>
+</body>
+</html>

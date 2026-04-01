@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulators - Mans Portfolio</title>
+    <link rel="stylesheet" href="css/mansStils.css">
+    <script>
+        function kalkulet(op) {
+            let a = parseFloat(document.getElementById('n1').value);
+            let b = parseFloat(document.getElementById('n2').value);
+            let r = 0;
+            
+            if (isNaN(a) || isNaN(b)) {
+                alert("Lūdzu, ievadi skaitļus!");
+                return;
+            }
+
+            if(op == '+') r = a + b;
+            if(op == '-') r = a - b;
+            if(op == '/') {
+                if(b == 0) { alert("Ar nulli dalīt nedrīkst!"); return; }
+                r = a / b;
+            }
+            document.getElementById('res').innerText = "Rezultāts: " + r;
+        }
+    </script>
+</head>
+<body>
+    <div class="w3-navbar">
+        <a href="index.html">Sākums</a>
+    </div>
+
+    <section>
+        <h2>Kalkulators</h2>
+        <p>Ievadi skaitļus un izvēlies darbību:</p>
+        <input type="number" id="n1" placeholder="Pirmais skaitlis" style="padding: 5px;">
+        <input type="number" id="n2" placeholder="Otrais skaitlis" style="padding: 5px;"><br><br>
+        
+        <button onclick="kalkulet('+')">+</button>
+        <button onclick="kalkulet('-')">-</button>
+        <button onclick="kalkulet('/')">/</button>
+        <button type="reset" onclick="location.reload()">Reset</button>
+        
+        <h3 id="res">Rezultāts: </h3>
+        <br>
+        <a href="index.html" style="color:white;">Atpakaļ uz sākumu</a>
+    </section>
+</body>
+</html>
